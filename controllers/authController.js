@@ -81,6 +81,17 @@ exports.login = async (req, res) => {
   }
 };
 
+exports.getCurrentUser = async (req, res) => {
+  try {
+    const user = await User.findByPk(req.user.id);  // req.user set in middleware
+    if (!user) return res.status(404).json({ message: 'User not found' });
+
+    res.status(200).json({ user });
+  } catch (err) {
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
 // Forgot Password
 exports.forgotPassword = async (req, res) => {
   const { email } = req.body;
