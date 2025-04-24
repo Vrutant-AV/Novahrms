@@ -1,0 +1,84 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a; /* Indigo-800 */
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b; /* Slate-500 */
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  color: black;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #f1f5f9; /* Slate-100 */
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.announcements {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0; /* Slate-200 */
+}
+
+.announcements h2 {
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.announcements ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.announcements li {
+  color: #0ea5e9;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.announcements li::before {
+  content: '•';
+  color: #0ea5e9; /* Sky-500 */
+  position: absolute;
+  left: -1rem;
+  font-size: 1.5rem;
+}
+
+.loading {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.unauthorized {
+  padding: 2rem;
+  color: red;
+  text-align: center;
+}
