@@ -66,7 +66,7 @@ const Login = () => {
         {error && <p className={styles.error}>{error}</p>}
         <input className={styles.loginButton} type="submit" value="Sign In" />
       </form>
-      <span className={styles.title}>Don't have an account?</span>
+      <span className={styles.title}>Don&apos;t have an account?</span>
       <input
         className={styles.signupButton}
         type="button"
